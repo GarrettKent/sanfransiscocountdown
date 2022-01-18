@@ -1,4 +1,4 @@
-var newYear = new Date('Dec 31, 2021 19:00:00').getTime();
+var newYear = new Date('Jan 18, 2022 19:00:00').getTime();
 
 function counter(){
     let dateCurrent =  new Date().getTime(),
