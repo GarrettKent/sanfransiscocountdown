@@ -1,4 +1,4 @@
-var newYear = new Date('Feb 23, 2025 12:30:00').getTime();
+var newYear = new Date('Npv 29, 2025 5:30:00').getTime();
 
 function counter(){
     let dateCurrent =  new Date().getTime(),
@@ -27,3 +27,4 @@ function counter(){
 setInterval(() => {
     counter();
 }, 1000);
+
