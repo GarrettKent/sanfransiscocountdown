@@ -3,49 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warriors vs Timberwolves | Countdown</title>
+    <meta name="description" content="Countdown to Golden State Warriors vs Minnesota Timberwolves, December 27, 2026 at 5:30 PM Pacific.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%80%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Barlow:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chilanka">
-    <title>San Fransisco</title>
+    <link rel="preload" as="image" href="images/curry.jpg">
 </head>
 <body>
 
-    <div class="main">
-        <div class="title">
-            San Fransisco Countdown<br> GSW Vs NOP
+    <div class="slideshow" id="slideshow" aria-hidden="true"></div>
+    <div class="wash"></div>
+    <div class="grain"></div>
+
+    <header class="topbar">
+        <div class="topbar-left">
+            <span class="tip">NBA Regular Season</span>
+            <span class="divider"></span>
+            <span>Chase Center, San Francisco</span>
+        </div>
+        <div class="topbar-right">Dec 27, 2026 &middot; 5:30 PM PT</div>
+    </header>
+
+    <main class="stage">
+        <div class="matchup">
+            <div class="team team-gsw">
+                <img class="team-logo" src="images/gsw-logo.svg" alt="Golden State Warriors logo">
+                <div class="team-text">
+                    <span class="team-city">Golden State</span>
+                    <span class="team-name">Warriors</span>
+                </div>
+            </div>
+            <div class="versus"><span>vs</span></div>
+            <div class="team team-min">
+                <img class="team-logo" src="images/min-logo.svg" alt="Minnesota Timberwolves logo">
+                <div class="team-text">
+                    <span class="team-city">Minnesota</span>
+                    <span class="team-name">Timberwolves</span>
+                </div>
+            </div>
         </div>
 
-        <div class="counter">
-            <div class="item" >
-                <div class="day" id="day">
-                    0
-                </div><hr>
-                <div>Days</div>
+        <div class="clock" id="clock" role="timer" aria-label="Countdown to tipoff">
+            <div class="unit">
+                <div class="value" id="dayValue"><span>000</span></div>
+                <div class="label">Days</div>
             </div>
-    
-            <div class="item">
-                <div class="hour" id="hour" >
-                    0
-                </div><hr>
-                <div>Hours</div>
+            <div class="colon">:</div>
+            <div class="unit">
+                <div class="value" id="hourValue"><span>00</span></div>
+                <div class="label">Hours</div>
             </div>
+            <div class="colon">:</div>
+            <div class="unit">
+                <div class="value" id="minuteValue"><span>00</span></div>
+                <div class="label">Minutes</div>
+            </div>
+            <div class="colon">:</div>
+            <div class="unit">
+                <div class="value" id="secondValue"><span>00</span></div>
+                <div class="label">Seconds</div>
+            </div>
+        </div>
 
-            <div class="item">
-                <div class="minute" id="minute">
-                    0
-                </div><hr>
-                <div>Minutes</div>
-            </div>
+        <div class="tagline" id="tagline">Countdown to tipoff in San Francisco</div>
+    </main>
 
-            <div class="item">
-                <div class="second" id="second">
-                    0
-                </div><hr>
-                <div>Seconds</div>
-            </div>
+    <footer class="bottombar">
+        <div class="caption">
+            <span class="caption-dot"></span>
+            <span id="captionText">Stephen Curry &middot; Golden State Warriors</span>
+        </div>
+        <div class="dots" id="dots"></div>
+        <a class="credits" href="#" id="creditsToggle">Photo credits</a>
+    </footer>
+
+    <div class="credits-panel" id="creditsPanel">
+        <button class="credits-close" id="creditsClose" aria-label="Close credits">&times;</button>
+        <h2>Photo Credits</h2>
+        <ul>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Stephen_Curry,_Olympic_Games_2024.jpg" target="_blank" rel="noopener">Stephen Curry</a> by Cl&eacute;ment Bardot, CC BY-SA 4.0</li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Anthony_Edwards_Kentavious_Caldwell-Pope_(51734745028).jpg" target="_blank" rel="noopener">Anthony Edwards</a> by All-Pro Reels, CC BY-SA 2.0</li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Draymond_Green_against_Washington.jpg" target="_blank" rel="noopener">Draymond Green</a> by Keith Allison, CC BY-SA 2.0</li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_and_San_Francisco_skyline_from_Hawk_Hill_at_Blue_Hour_dllu.jpg" target="_blank" rel="noopener">Golden Gate Bridge</a> by Daniel L. Lu, CC BY-SA 4.0</li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:LaMelo_Ball.jpg" target="_blank" rel="noopener">LaMelo Ball</a> by Erik Drost, CC BY 2.0</li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Rudy_Gobert_(51914871493).jpg" target="_blank" rel="noopener">Rudy Gobert</a> by Erik Drost, CC BY 2.0</li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Jimmy_Butler_-_Rio_2016.jpg" target="_blank" rel="noopener">Jimmy Butler</a> by Ipsingh, CC BY-SA 2.0</li>
+        </ul>
     </div>
-   
-    
-<script src="main.js"></script>
+
+    <script src="main.js"></script>
 </body>
 </html>
-
